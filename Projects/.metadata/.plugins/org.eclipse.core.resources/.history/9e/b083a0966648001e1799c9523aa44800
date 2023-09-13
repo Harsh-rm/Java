@@ -1,0 +1,24 @@
+package com.virtualpairprogrammers.domain;
+
+public enum MenuCategory {
+	STARTER("STARTER"), MAIN_COURSE("MainCourse"), DESERTS("Desserts"), DRINKS("Drinks");
+	
+    private String stringValue;
+
+    private MenuCategory(String stringValue) {
+        this.stringValue = stringValue;
+    }
+    
+    public String getStringValue() {
+        return stringValue;
+    }
+
+    public void setStringValue(String stringValue) {
+        this.stringValue = stringValue;
+    }
+    
+    @Override
+    public String toString() {
+        return stringValue;
+    }
+}

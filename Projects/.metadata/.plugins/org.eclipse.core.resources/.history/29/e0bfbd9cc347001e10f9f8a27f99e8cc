@@ -1,0 +1,13 @@
+package com.virtualpairprogrammers.filters;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequestWrapper;
+
+public class MenuSearchCorrectionRequestWrapper extends HttpServletRequestWrapper {
+
+	public MenuSearchCorrectionRequestWrapper(HttpServletRequest request) {
+		super(request);
+		
+	}
+
+}

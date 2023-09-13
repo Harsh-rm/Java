@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/embed/tomcat-embed-core/8.0.28/tomcat-embed-core-8.0.28.jar" sourcepath="M2_REPO/org/apache/tomcat/embed/tomcat-embed-core/8.0.28/tomcat-embed-core-8.0.28-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.28/tomcat-embed-logging-juli-8.0.28.jar" sourcepath="M2_REPO/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.28/tomcat-embed-logging-juli-8.0.28-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/embed/tomcat-embed-jasper/8.0.28/tomcat-embed-jasper-8.0.28.jar" sourcepath="M2_REPO/org/apache/tomcat/embed/tomcat-embed-jasper/8.0.28/tomcat-embed-jasper-8.0.28-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/embed/tomcat-embed-el/8.0.28/tomcat-embed-el-8.0.28.jar" sourcepath="M2_REPO/org/apache/tomcat/embed/tomcat-embed-el/8.0.28/tomcat-embed-el-8.0.28-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/eclipse/jdt/core/compiler/ecj/4.4.2/ecj-4.4.2.jar" sourcepath="M2_REPO/org/eclipse/jdt/core/compiler/ecj/4.4.2/ecj-4.4.2-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/tomcat-jasper/8.0.28/tomcat-jasper-8.0.28.jar" sourcepath="M2_REPO/org/apache/tomcat/tomcat-jasper/8.0.28/tomcat-jasper-8.0.28-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/tomcat-servlet-api/8.0.28/tomcat-servlet-api-8.0.28.jar" sourcepath="M2_REPO/org/apache/tomcat/tomcat-servlet-api/8.0.28/tomcat-servlet-api-8.0.28-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/tomcat-juli/8.0.28/tomcat-juli-8.0.28.jar" sourcepath="M2_REPO/org/apache/tomcat/tomcat-juli/8.0.28/tomcat-juli-8.0.28-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/tomcat-jsp-api/8.0.28/tomcat-jsp-api-8.0.28.jar" sourcepath="M2_REPO/org/apache/tomcat/tomcat-jsp-api/8.0.28/tomcat-jsp-api-8.0.28-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/tomcat-el-api/8.0.28/tomcat-el-api-8.0.28.jar" sourcepath="M2_REPO/org/apache/tomcat/tomcat-el-api/8.0.28/tomcat-el-api-8.0.28-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/tomcat-jasper-el/8.0.28/tomcat-jasper-el-8.0.28.jar" sourcepath="M2_REPO/org/apache/tomcat/tomcat-jasper-el/8.0.28/tomcat-jasper-el-8.0.28-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/tomcat-api/8.0.28/tomcat-api-8.0.28.jar" sourcepath="M2_REPO/org/apache/tomcat/tomcat-api/8.0.28/tomcat-api-8.0.28-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/tomcat-util-scan/8.0.28/tomcat-util-scan-8.0.28.jar" sourcepath="M2_REPO/org/apache/tomcat/tomcat-util-scan/8.0.28/tomcat-util-scan-8.0.28-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/tomcat/tomcat-util/8.0.28/tomcat-util-8.0.28.jar" sourcepath="M2_REPO/org/apache/tomcat/tomcat-util/8.0.28/tomcat-util-8.0.28-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/h2database/h2/1.4.196/h2-1.4.196.jar" sourcepath="M2_REPO/com/h2database/h2/1.4.196/h2-1.4.196-sources.jar"/>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="target/generated-sources/annotations">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="target/generated-test-sources/test-annotations">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="ignore_optional_problems" value="true"/>
+			<attribute name="m2e-apt" value="true"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

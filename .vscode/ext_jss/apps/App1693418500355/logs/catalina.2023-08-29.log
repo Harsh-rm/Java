@@ -1,0 +1,486 @@
+29-Aug-2023 23:10:25.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.53
+29-Aug-2023 23:10:25.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 29 2018 14:42:45 UTC
+29-Aug-2023 23:10:25.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.53.0
+29-Aug-2023 23:10:25.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+29-Aug-2023 23:10:25.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.2.0-31-generic
+29-Aug-2023 23:10:25.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+29-Aug-2023 23:10:25.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/jdk-20
+29-Aug-2023 23:10:25.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           20.0.2+9-78
+29-Aug-2023 23:10:25.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Aug-2023 23:10:25.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/harsh/Downloads/apache-tomcat-8.0.53
+29-Aug-2023 23:10:25.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/harsh/Downloads/apache-tomcat-8.0.53
+29-Aug-2023 23:10:25.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/harsh/Downloads/apache-tomcat-8.0.53/conf/logging.properties
+29-Aug-2023 23:10:25.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Aug-2023 23:10:25.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Aug-2023 23:10:25.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Aug-2023 23:10:25.476 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Aug-2023 23:10:25.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/harsh/Downloads/apache-tomcat-8.0.53
+29-Aug-2023 23:10:25.477 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/harsh/Downloads/apache-tomcat-8.0.53
+29-Aug-2023 23:10:25.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/harsh/Downloads/apache-tomcat-8.0.53/temp
+29-Aug-2023 23:10:25.479 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+29-Aug-2023 23:10:25.548 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Aug-2023 23:10:25.580 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+29-Aug-2023 23:10:25.586 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+29-Aug-2023 23:10:25.589 SEVERE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["ajp-nio-8009"]
+ java.lang.IllegalArgumentException: timeout < 0
+	at java.base/sun.nio.ch.ServerSocketAdaptor.setSoTimeout(ServerSocketAdaptor.java:162)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:352)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:823)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:476)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:568)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:871)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:592)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:615)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:308)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:482)
+
+29-Aug-2023 23:10:25.590 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[AJP/1.3-8009]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:568)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:871)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:592)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:615)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:308)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:482)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:962)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: timeout < 0
+	at java.base/sun.nio.ch.ServerSocketAdaptor.setSoTimeout(ServerSocketAdaptor.java:162)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:352)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:823)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:476)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	... 11 more
+
+29-Aug-2023 23:10:25.591 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 610 ms
+29-Aug-2023 23:10:25.658 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+29-Aug-2023 23:10:25.658 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.53
+29-Aug-2023 23:10:25.672 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/examples
+29-Aug-2023 23:10:26.270 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/examples has finished in 597 ms
+29-Aug-2023 23:10:26.271 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/ROOT
+29-Aug-2023 23:10:26.310 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/ROOT has finished in 39 ms
+29-Aug-2023 23:10:26.311 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/host-manager
+29-Aug-2023 23:10:26.370 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/host-manager has finished in 58 ms
+29-Aug-2023 23:10:26.370 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/manager
+29-Aug-2023 23:10:26.409 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/manager has finished in 38 ms
+29-Aug-2023 23:10:26.409 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/docs
+29-Aug-2023 23:10:26.438 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/docs has finished in 28 ms
+29-Aug-2023 23:10:26.443 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Aug-2023 23:10:26.464 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 871 ms
+29-Aug-2023 23:12:01.465 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Aug-2023 23:12:01.466 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Aug-2023 23:12:01.520 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+29-Aug-2023 23:12:01.520 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+29-Aug-2023 23:12:01.535 SEVERE [Catalina-startStop-2] org.apache.catalina.core.ContainerBase.stopInternal A child container failed during stop
+ java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1001)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1426)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1415)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:233)
+	... 6 more
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [WebappLoader[]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:233)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5621)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	... 6 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field static final java.io.ClassCache java.io.ObjectStreamClass$Caches.localDescs accessible: module java.base does not "opens java.io" to unnamed module @27fa135a
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:387)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:363)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:311)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:181)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:175)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2398)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2386)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1611)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1556)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:445)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	... 8 more
+
+29-Aug-2023 23:12:01.540 SEVERE [Catalina-startStop-2] org.apache.catalina.core.ContainerBase.stopInternal A child container failed during stop
+ java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/examples]]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1001)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1426)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1415)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/examples]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:233)
+	... 6 more
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [WebappLoader[/examples]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:233)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5621)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	... 6 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field static final java.io.ClassCache java.io.ObjectStreamClass$Caches.localDescs accessible: module java.base does not "opens java.io" to unnamed module @27fa135a
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:387)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:363)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:311)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:181)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:175)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2398)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2386)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1611)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1556)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:445)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	... 8 more
+
+29-Aug-2023 23:12:01.544 SEVERE [Catalina-startStop-2] org.apache.catalina.core.ContainerBase.stopInternal A child container failed during stop
+ java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/host-manager]]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1001)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1426)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1415)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/host-manager]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:233)
+	... 6 more
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [WebappLoader[/host-manager]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:233)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5621)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	... 6 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field static final java.io.ClassCache java.io.ObjectStreamClass$Caches.localDescs accessible: module java.base does not "opens java.io" to unnamed module @27fa135a
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:387)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:363)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:311)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:181)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:175)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2398)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2386)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1611)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1556)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:445)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	... 8 more
+
+29-Aug-2023 23:12:01.547 SEVERE [Catalina-startStop-2] org.apache.catalina.core.ContainerBase.stopInternal A child container failed during stop
+ java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/manager]]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1001)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1426)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1415)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/manager]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:233)
+	... 6 more
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [WebappLoader[/manager]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:233)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5621)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	... 6 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field static final java.io.ClassCache java.io.ObjectStreamClass$Caches.localDescs accessible: module java.base does not "opens java.io" to unnamed module @27fa135a
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:387)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:363)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:311)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:181)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:175)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2398)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2386)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1611)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1556)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:445)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	... 8 more
+
+29-Aug-2023 23:12:01.550 SEVERE [Catalina-startStop-2] org.apache.catalina.core.ContainerBase.stopInternal A child container failed during stop
+ java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/docs]]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1001)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1426)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1415)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/docs]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:233)
+	... 6 more
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [WebappLoader[/docs]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:233)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5621)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	... 6 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field static final java.io.ClassCache java.io.ObjectStreamClass$Caches.localDescs accessible: module java.base does not "opens java.io" to unnamed module @27fa135a
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:387)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:363)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:311)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:181)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:175)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2398)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2386)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1611)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1556)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:445)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	... 8 more
+
+29-Aug-2023 23:12:01.551 SEVERE [main] org.apache.catalina.core.ContainerBase.stopInternal A child container failed during stop
+ java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost]]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1001)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:502)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:810)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:714)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:676)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:349)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:483)
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina].StandardHost[localhost]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:233)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1426)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1415)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.apache.catalina.LifecycleException: A child container failed during stop
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1008)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	... 6 more
+
+29-Aug-2023 23:12:01.551 SEVERE [main] org.apache.catalina.startup.Catalina.stop Catalina.stop
+ org.apache.catalina.LifecycleException: Failed to stop component [StandardServer[8005]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:233)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:714)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:676)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:349)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:483)
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [StandardService[Catalina]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:233)
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:810)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	... 6 more
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Catalina]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:233)
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:502)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	... 8 more
+Caused by: org.apache.catalina.LifecycleException: A child container failed during stop
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1008)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	... 10 more
+
+29-Aug-2023 23:32:27.738 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.53
+29-Aug-2023 23:32:27.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 29 2018 14:42:45 UTC
+29-Aug-2023 23:32:27.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.53.0
+29-Aug-2023 23:32:27.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+29-Aug-2023 23:32:27.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.2.0-31-generic
+29-Aug-2023 23:32:27.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+29-Aug-2023 23:32:27.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/jdk-20
+29-Aug-2023 23:32:27.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           20.0.2+9-78
+29-Aug-2023 23:32:27.743 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Aug-2023 23:32:27.743 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/harsh/Downloads/apache-tomcat-8.0.53
+29-Aug-2023 23:32:27.743 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/harsh/Downloads/apache-tomcat-8.0.53
+29-Aug-2023 23:32:27.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Aug-2023 23:32:27.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Aug-2023 23:32:27.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Aug-2023 23:32:27.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/harsh/Downloads/apache-tomcat-8.0.53/conf/logging.properties
+29-Aug-2023 23:32:27.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Aug-2023 23:32:27.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Aug-2023 23:32:27.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Aug-2023 23:32:27.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+29-Aug-2023 23:32:27.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/harsh/Downloads/apache-tomcat-8.0.53
+29-Aug-2023 23:32:27.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/harsh/Downloads/apache-tomcat-8.0.53
+29-Aug-2023 23:32:27.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/harsh/Downloads/apache-tomcat-8.0.53/temp
+29-Aug-2023 23:32:27.747 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+29-Aug-2023 23:32:27.822 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Aug-2023 23:32:27.838 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+29-Aug-2023 23:32:27.843 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+29-Aug-2023 23:32:27.847 SEVERE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["ajp-nio-8009"]
+ java.lang.IllegalArgumentException: timeout < 0
+	at java.base/sun.nio.ch.ServerSocketAdaptor.setSoTimeout(ServerSocketAdaptor.java:162)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:352)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:823)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:476)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:568)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:871)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:592)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:615)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:308)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:482)
+
+29-Aug-2023 23:32:27.849 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[AJP/1.3-8009]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:568)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:871)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:592)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:615)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:308)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:482)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:962)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: timeout < 0
+	at java.base/sun.nio.ch.ServerSocketAdaptor.setSoTimeout(ServerSocketAdaptor.java:162)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:352)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:823)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:476)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	... 11 more
+
+29-Aug-2023 23:32:27.850 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 576 ms
+29-Aug-2023 23:32:27.912 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+29-Aug-2023 23:32:27.912 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.53
+29-Aug-2023 23:32:27.919 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/examples
+29-Aug-2023 23:32:28.523 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/examples has finished in 603 ms
+29-Aug-2023 23:32:28.524 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/ROOT
+29-Aug-2023 23:32:28.558 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/ROOT has finished in 34 ms
+29-Aug-2023 23:32:28.559 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/host-manager
+29-Aug-2023 23:32:28.607 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/host-manager has finished in 48 ms
+29-Aug-2023 23:32:28.608 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/manager
+29-Aug-2023 23:32:28.650 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/manager has finished in 41 ms
+29-Aug-2023 23:32:28.650 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/docs
+29-Aug-2023 23:32:28.693 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/harsh/Downloads/apache-tomcat-8.0.53/webapps/docs has finished in 43 ms
+29-Aug-2023 23:32:28.696 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Aug-2023 23:32:28.705 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 853 ms
+29-Aug-2023 23:38:55.732 INFO [Thread-3] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Aug-2023 23:38:55.784 INFO [Thread-3] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+29-Aug-2023 23:38:55.785 INFO [Thread-3] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+29-Aug-2023 23:38:55.790 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [ROOT]
+ java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2399)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2386)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1611)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1556)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:445)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5621)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1426)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1415)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+29-Aug-2023 23:38:55.799 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [examples]
+ java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2399)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2386)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1611)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1556)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:445)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5621)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1426)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1415)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+29-Aug-2023 23:38:55.805 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [host-manager]
+ java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2399)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2386)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1611)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1556)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:445)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5621)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1426)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1415)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+29-Aug-2023 23:38:55.812 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [manager]
+ java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2399)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2386)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1611)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1556)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:445)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5621)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1426)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1415)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+29-Aug-2023 23:38:55.819 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches Failed to clear soft references from ObjectStreamClass$Caches for web application [docs]
+ java.lang.ClassCastException: class java.io.ObjectStreamClass$Caches$1 cannot be cast to class java.util.Map (java.io.ObjectStreamClass$Caches$1 and java.util.Map are in module java.base of loader 'bootstrap')
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2399)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2386)
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1611)
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1556)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:445)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5621)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:221)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1426)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1415)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+29-Aug-2023 23:38:55.829 INFO [Thread-3] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Aug-2023 23:38:55.838 INFO [Thread-3] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Aug-2023 23:38:55.839 INFO [Thread-3] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+29-Aug-2023 23:38:55.839 INFO [Thread-3] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
