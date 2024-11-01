@@ -1,3 +1,0 @@
-INDEX VERSION 1.134
-/home/harsh/Documents/Programming/Java/Projects/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3570344653.index
-/Restaurant/src/test/java
