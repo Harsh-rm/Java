@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--  Service Beans -->
+	<bean id="customerService" class="com.virtualpairprogrammers.services.customers.CustomerManagementServiceProductionImpl">
+		<constructor-arg ref="customerDao"/>
+	</bean>
+	
+	<bean id="diaryService" class="com.virtualpairprogrammers.services.diary.DiaryManagementServiceProductionImpl">
+		<constructor-arg ref="actionDao"/>
+	</bean>
+	
+	<bean id="callService" class="com.virtualpairprogrammers.services.calls.CallHandlingServiceImpl">	
+		<constructor-arg ref="customerService"/>
+		<constructor-arg ref="diaryService"/>	
+	</bean>
+
+</beans>

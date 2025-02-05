@@ -1,0 +1,30 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"  
+            "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	
+	
+	<!--  DAO Beans -->
+	<bean id="bookDao" class="com.virtualpairprogrammers.avalon.data.BookDaoHorridJdbcImpl"></bean>
+	
+	
+	<!--  Service beans -->
+	<bean id="accountsService" 
+          class="com.virtualpairprogrammers.avalon.services.AccountsServiceMockImpl"/>
+
+    <bean id="bookService"       
+          class="com.virtualpairprogrammers.avalon.services.BookServiceProductionImpl">
+          
+          <constructor-arg ref="bookDao"/>
+          
+    </bean>
+
+    <bean id="purchasingService"       
+	   	  class="com.virtualpairprogrammers.avalon.services.PurchasingServiceImpl">
+	   	  
+		<constructor-arg ref="bookService"/>
+		<constructor-arg ref="accountsService"/>	   	  
+
+	</bean>
+	   	  
+</beans>
+

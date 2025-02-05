@@ -1,0 +1,9 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"  
+            "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<bean id="customerService" class="com.virtualpairprogrammers.services.customers.CustomerManagementMockImpl"/>
+	
+	<bean id="diaryService" class="com.virtualpairprogrammers.services.diary.DiaryManagementServiceMockImpl"/>
+
+</beans>

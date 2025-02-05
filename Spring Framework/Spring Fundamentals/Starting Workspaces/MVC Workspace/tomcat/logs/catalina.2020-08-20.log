@@ -1,0 +1,51 @@
+20-Aug-2020 13:45:09.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.37
+20-Aug-2020 13:45:09.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 30 2020 20:09:49 UTC
+20-Aug-2020 13:45:09.458 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.37.0
+20-Aug-2020 13:45:09.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+20-Aug-2020 13:45:09.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+20-Aug-2020 13:45:09.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+20-Aug-2020 13:45:09.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\java\jdk-11.0.2
+20-Aug-2020 13:45:09.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.2+7
+20-Aug-2020 13:45:09.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Aug-2020 13:45:09.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat
+20-Aug-2020 13:45:09.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat
+20-Aug-2020 13:45:09.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Aug-2020 13:45:09.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+20-Aug-2020 13:45:09.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Aug-2020 13:45:09.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\conf\logging.properties
+20-Aug-2020 13:45:09.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Aug-2020 13:45:09.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Aug-2020 13:45:09.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Aug-2020 13:45:09.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+20-Aug-2020 13:45:09.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat
+20-Aug-2020 13:45:09.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat
+20-Aug-2020 13:45:09.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\temp
+20-Aug-2020 13:45:09.492 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\java\jdk-11.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\cygwin64\usr\local\bin;C:\cygwin64\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\mysql\bin;C:\WINDOWS\System32\OpenSSH;C:\Program Files\nodejs;C:\Program Files\Amazon\AWSCLI\bin;C:\Program Files (x86)\Groovy\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\abcd\AppData\Local\Microsoft\WindowsApps;C:\Program Files\java\apache-maven-3.6.0\bin;C:\Program Files\java\jdk1.8.0_202\bin;C:\Users\abcd\AppData\Roaming\npm;C:\Users\abcd\AppData\Local\Programs\Microsoft VS Code\bin;.]
+20-Aug-2020 13:45:09.968 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Aug-2020 13:45:10.516 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1386] milliseconds
+20-Aug-2020 13:45:10.595 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-Aug-2020 13:45:10.595 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.37]
+20-Aug-2020 13:45:10.614 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\webapps\docs]
+20-Aug-2020 13:45:11.435 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [438] milliseconds.
+20-Aug-2020 13:45:11.471 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\webapps\docs] has finished in [858] ms
+20-Aug-2020 13:45:11.472 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\webapps\examples]
+20-Aug-2020 13:45:12.339 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\webapps\examples] has finished in [867] ms
+20-Aug-2020 13:45:12.340 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\webapps\host-manager]
+20-Aug-2020 13:45:12.421 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\webapps\host-manager] has finished in [80] ms
+20-Aug-2020 13:45:12.423 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\webapps\manager]
+20-Aug-2020 13:45:12.491 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\webapps\manager] has finished in [67] ms
+20-Aug-2020 13:45:12.493 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\webapps\ROOT]
+20-Aug-2020 13:45:12.546 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\webapps\ROOT] has finished in [53] ms
+20-Aug-2020 13:45:12.553 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Aug-2020 13:45:12.567 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2050] milliseconds
+20-Aug-2020 13:46:13.614 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\webapps\mywebapp.war]
+20-Aug-2020 13:46:22.099 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2020 13:46:29.740 INFO [Catalina-utility-2] org.hsqldb.persist.Logger.logInfoEvent Database closed
+20-Aug-2020 13:46:36.052 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\webapps\mywebapp.war] has finished in [22,438] ms
+20-Aug-2020 13:49:16.470 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/mywebapp]
+20-Aug-2020 13:49:16.541 INFO [Catalina-utility-1] org.hsqldb.persist.Logger.logInfoEvent Database closed
+20-Aug-2020 13:49:16.705 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [mywebapp] registered the JDBC driver [org.hsqldb.jdbc.JDBCDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+20-Aug-2020 13:49:16.846 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\webapps\mywebapp.war]
+20-Aug-2020 13:49:25.381 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Aug-2020 13:49:32.207 INFO [Catalina-utility-1] org.hsqldb.persist.Logger.logInfoEvent Database closed
+20-Aug-2020 13:49:38.072 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\abcd\eclipse-workspace11\MVC Workspace\tomcat\webapps\mywebapp.war] has finished in [21,226] ms

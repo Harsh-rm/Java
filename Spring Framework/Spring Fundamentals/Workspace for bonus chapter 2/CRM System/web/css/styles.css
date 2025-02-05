@@ -1,0 +1,53 @@
+body {
+    font-family:arial,sans-serif; 
+    font-size: 1.0em;
+}
+
+#header li {
+	display: inline;
+}
+
+#header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#logout input[type="submit"] {
+     background:none!important;
+     border:none; 
+     padding:0!important;
+     cursor:pointer;
+	font-size: 1.1em;
+    text-decoration: none;
+    color: #fff;   
+}
+
+a {
+	font-size: 1.1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+#links {
+    background-color: #000;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+#logout {
+    margin-left: 300px;
+    float: right;
+}
+
+.small {
+   font-size: 0.6em;
+}
+
+
+#blurb {
+    margin: 20px;
+    padding: 5px;
+    border: 1px solid #000;
+   background-color: #D6D6FF;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"  
+            "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+    <bean id="motdService"  
+           class="com.virtualpairprogrammers.motd.MessageOfTheDayDynamicConfigurableImpl">      
+
+		<property name="messageList">
+		
+			<list>
+				<value>Sunday message</value>
+				<value>Monday</value>
+				<value>Tuesday</value>
+				<value>Wednesday</value>
+				<value>Thursday</value>
+				<value>Friday</value>
+				<value>Saturday</value>
+			</list>
+		
+		</property>
+    
+    </bean>
+    
+</beans>
+
